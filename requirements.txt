@@ -1,7 +1,7 @@
 -f https://download.pytorch.org/whl/torch_stable.html
 
 spacy
-torchtext
+torch==1.8.1+cpu
 blis
 catalogue
 certifi==2019.11.28
