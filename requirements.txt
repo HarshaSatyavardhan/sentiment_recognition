@@ -1,7 +1,6 @@
--f https://download.pytorch.org/whl/torch_stable.html
-
+https://download.pytorch.org/whl/cpu/torch-1.4.0%2Bcpu-cp37-cp37m-linux_x86_64.whl
+torchtext==0.3.1
 spacy
-torchtext==0.11.1
 blis
 catalogue
 certifi==2019.11.28
