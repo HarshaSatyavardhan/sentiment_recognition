@@ -27,6 +27,6 @@ urllib3
 wasabi
 Werkzeug
 zipp
-python3 -m spacy download en_core_web_sm
+spacy download en_core_web_sm
 torch==1.8.1+cpu
 torchtext==0.3.1
