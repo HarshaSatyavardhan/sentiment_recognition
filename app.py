@@ -8,11 +8,12 @@ app = flask.Flask(__name__)
 CORS(app)
 
 response = {}
-@app.route('/predict', methods=["GET"])
+@app.route('/predict', methods=["GET","POST"])
 def index():
-
-    
-    text_input = request.args.get('text_input')
+    if request.method =="POST":
+        text_input = request.form["text_input"]
+    else:
+        text_input = request.args.get('text_input')
 
 
         # Passes contents of query string to the prediction function contained in model.py
@@ -22,10 +23,11 @@ def index():
         # Indexes the returned dictionary for the sentiment probability
     if((prediction[0]['prob']) > 0.5):
         prediction = "1"
-        return flask.jsonify({'result': prediction})
+        
     else:
         prediction = "0"
-        return flask.jsonify({'result': prediction})
+    return flask.jsonify({'result': prediction})
+
 
 
 
