@@ -1,7 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
-torch==1.8.1+cpu
 
-torchtext==0.3.1
 spacy
 blis
 catalogue
@@ -29,3 +27,5 @@ urllib3
 wasabi
 Werkzeug
 zipp
+torch==1.8.1+cpu
+torchtext==0.3.1
